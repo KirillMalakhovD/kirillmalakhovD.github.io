@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TG Archiver</title>
+<meta name="description" content="TG Archiver: a personal tool that archives the owner's Telegram chats and syncs the owner's project folders with the owner's Google Drive.">
+<style>
+  :root { --bg: #ffffff; --text: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea; --accent: #1e82dc; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111113; --text: #f2f2f7; --muted: #a1a1a6; --line: #2c2c2e; --accent: #4fb0f5; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>TG Archiver</h1>
+  <p class="sub">A personal tool of Kirill Malakhov. Not a public service, not distributed to anyone.</p>
+
+  <p>TG Archiver runs only on the owner's Mac. It saves the history of selected Telegram chats as Markdown files,
+  sorts files received in those chats into project folders, and keeps these project folders in sync with
+  folders on the owner's Google Drive, so that the owner and invited colleagues work with the same files.</p>
+
+  <h2 id="privacy">Privacy Policy</h2>
+  <p>Last updated: October 13, 2026.</p>
+
+  <p><b>Who uses it.</b> The app is used only by its owner. There are no other users and no accounts.</p>
+
+  <p><b>What Google data it accesses.</b> With the owner's consent, the app uses the Google Drive API
+  to list, download and upload files in the project folders the owner selects in the app's settings.</p>
+
+  <p><b>How the data is used.</b> Only to sync those folders between the owner's Mac and the owner's Google Drive:</p>
+  <ul>
+    <li>project files and chat history are uploaded from the Mac to the selected Drive folders;</li>
+    <li>files that colleagues add to those folders are downloaded to the Mac;</li>
+    <li>the app never deletes anything on Google Drive.</li>
+  </ul>
+
+  <p><b>Where the data is stored.</b> Only on the owner's Mac and in the owner's Google Drive.
+  Access keys are stored in the macOS Keychain. The app has no server of its own.</p>
+
+  <p><b>Sharing.</b> Data obtained through Google APIs is never sold, shared with or transferred to third parties,
+  and is not used for advertising or for training AI models. The app's use of information received from Google APIs
+  adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <p><b>Revoking access.</b> Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <p><b>Contact.</b> <a href="mailto:malakhov@thelh.net">malakhov@thelh.net</a></p>
+
+  <footer>TG Archiver · personal use only</footer>
+</main>
+</body>
+</html>
